@@ -1,0 +1,152 @@
+
+ingame_ui.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+background
+  rotate: false
+  xy: 1, 75
+  size: 425, 431
+  orig: 425, 431
+  offset: 0, 0
+  index: -1
+continue_down
+  rotate: false
+  xy: 1, 1
+  size: 72, 72
+  orig: 72, 72
+  offset: 0, 0
+  index: -1
+continue_up
+  rotate: false
+  xy: 428, 434
+  size: 72, 72
+  orig: 72, 72
+  offset: 0, 0
+  index: -1
+sound_checked
+  rotate: false
+  xy: 75, 3
+  size: 71, 70
+  orig: 71, 70
+  offset: 0, 0
+  index: -1
+sound_down
+  rotate: false
+  xy: 428, 362
+  size: 71, 70
+  orig: 71, 70
+  offset: 0, 0
+  index: -1
+sound_up
+  rotate: false
+  xy: 502, 436
+  size: 71, 70
+  orig: 71, 70
+  offset: 0, 0
+  index: -1
+downbtn_down
+  rotate: false
+  xy: 148, 3
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+downbtn_up
+  rotate: false
+  xy: 428, 290
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+menu_down
+  rotate: false
+  xy: 575, 436
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+menu_up
+  rotate: false
+  xy: 220, 3
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+no_down
+  rotate: false
+  xy: 428, 218
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+no_up
+  rotate: false
+  xy: 647, 436
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+restart_down
+  rotate: false
+  xy: 292, 3
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+restart_up
+  rotate: false
+  xy: 428, 146
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+upbtn_down
+  rotate: false
+  xy: 719, 436
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+upbtn_up
+  rotate: false
+  xy: 791, 436
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+yes_down
+  rotate: false
+  xy: 863, 436
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+yes_up
+  rotate: false
+  xy: 935, 436
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+music_checked
+  rotate: false
+  xy: 428, 84
+  size: 64, 60
+  orig: 64, 60
+  offset: 0, 0
+  index: -1
+music_down
+  rotate: false
+  xy: 364, 13
+  size: 64, 60
+  orig: 64, 60
+  offset: 0, 0
+  index: -1
+music_up
+  rotate: false
+  xy: 430, 22
+  size: 64, 60
+  orig: 64, 60
+  offset: 0, 0
+  index: -1

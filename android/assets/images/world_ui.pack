@@ -1,0 +1,94 @@
+
+world_ui.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+levelbg001
+  rotate: false
+  xy: 1, 522
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: -1
+worlds_bg
+  rotate: false
+  xy: 1, 40
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: -1
+levelbtn_disabled
+  rotate: false
+  xy: 803, 852
+  size: 176, 150
+  orig: 176, 150
+  offset: 0, 0
+  index: -1
+levelbtn_down
+  rotate: false
+  xy: 803, 700
+  size: 176, 150
+  orig: 176, 150
+  offset: 0, 0
+  index: -1
+levelbtn_up
+  rotate: false
+  xy: 803, 548
+  size: 176, 150
+  orig: 176, 150
+  offset: 0, 0
+  index: -1
+backbtn_down
+  rotate: false
+  xy: 803, 481
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+backbtn_up
+  rotate: false
+  xy: 803, 414
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+main_item_empty
+  rotate: false
+  xy: 1, 1
+  size: 39, 37
+  orig: 39, 37
+  offset: 0, 0
+  index: -1
+main_item_full
+  rotate: false
+  xy: 981, 965
+  size: 39, 37
+  orig: 39, 37
+  offset: 0, 0
+  index: -1
+
+world_ui2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+world001_down
+  rotate: false
+  xy: 1, 521
+  size: 370, 258
+  orig: 370, 258
+  offset: 0, 0
+  index: -1
+world001_up
+  rotate: false
+  xy: 1, 261
+  size: 370, 258
+  orig: 370, 258
+  offset: 0, 0
+  index: -1
+world_comingsoon
+  rotate: false
+  xy: 1, 1
+  size: 370, 258
+  orig: 370, 258
+  offset: 0, 0
+  index: -1

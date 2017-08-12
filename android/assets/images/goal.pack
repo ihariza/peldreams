@@ -1,0 +1,40 @@
+
+goal.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+goal
+  rotate: false
+  xy: 1, 354
+  size: 270, 351
+  orig: 270, 351
+  offset: 0, 0
+  index: 1
+goal
+  rotate: false
+  xy: 1, 1
+  size: 270, 351
+  orig: 270, 351
+  offset: 0, 0
+  index: 2
+goal
+  rotate: false
+  xy: 273, 354
+  size: 270, 351
+  orig: 270, 351
+  offset: 0, 0
+  index: 3
+goal
+  rotate: false
+  xy: 273, 1
+  size: 270, 351
+  orig: 270, 351
+  offset: 0, 0
+  index: 4
+goal
+  rotate: false
+  xy: 545, 354
+  size: 270, 351
+  orig: 270, 351
+  offset: 0, 0
+  index: 5

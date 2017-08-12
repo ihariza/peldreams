@@ -1,0 +1,10 @@
+{
+com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {
+	play: { down: play_down, up: play_up },
+	sound: { down: sound_down, up: sound_up, checked: sound_checked },
+	music: { down: music_down, up: music_up, checked: music_checked }
+},
+com.badlogic.gdx.scenes.scene2d.ui.Image: {
+	background: { drawable: background },
+},
+}

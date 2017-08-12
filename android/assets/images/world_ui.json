@@ -1,0 +1,28 @@
+{
+com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {
+	world001button: { up: world001_up, down: world001_down },
+	world_comingsoon: { up:  world_comingsoon, down:  world_comingsoon, disabled: world_comingsoon },
+	levelbutton: { up: levelbtn_up, down: levelbtn_down, disabled: levelbtn_disabled },
+	backbutton: { up: backbtn_up, down: backbtn_down }
+},
+com.badlogic.gdx.scenes.scene2d.ui.Image: {
+	background001: { drawable: worlds_bg },
+	background001Levels: { drawable: levelbg001 },
+	main_item_full: { drawable: main_item_full },
+	main_item_empty: { drawable: main_item_empty }
+},
+com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle: {
+	default: { }
+},
+com.badlogic.gdx.graphics.g2d.BitmapFont: { default-font: { file: fonts/general_normal.fnt } 
+},
+com.badlogic.gdx.graphics.Color: {
+	green: { a: 1, b: 0, g: 1, r: 0 },
+	white: { a: 1, b: 1, g: 1, r: 1 },
+	red: { a: 1, b: 0, g: 0, r: 1 },
+	black: { a: 1, b: 0, g: 0, r: 0 }
+},
+com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+	default: { font: default-font, fontColor: white }
+},
+}

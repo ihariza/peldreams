@@ -1,0 +1,68 @@
+
+main_ui.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+background
+  rotate: false
+  xy: 1, 1
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: -1
+play_down
+  rotate: false
+  xy: 803, 322
+  size: 190, 159
+  orig: 190, 159
+  offset: 0, 0
+  index: -1
+play_up
+  rotate: false
+  xy: 803, 161
+  size: 190, 159
+  orig: 190, 159
+  offset: 0, 0
+  index: -1
+sound_checked
+  rotate: false
+  xy: 803, 89
+  size: 71, 70
+  orig: 71, 70
+  offset: 0, 0
+  index: -1
+sound_down
+  rotate: false
+  xy: 803, 17
+  size: 71, 70
+  orig: 71, 70
+  offset: 0, 0
+  index: -1
+sound_up
+  rotate: false
+  xy: 876, 89
+  size: 71, 70
+  orig: 71, 70
+  offset: 0, 0
+  index: -1
+music_checked
+  rotate: false
+  xy: 876, 27
+  size: 64, 60
+  orig: 64, 60
+  offset: 0, 0
+  index: -1
+music_down
+  rotate: false
+  xy: 949, 99
+  size: 64, 60
+  orig: 64, 60
+  offset: 0, 0
+  index: -1
+music_up
+  rotate: false
+  xy: 949, 37
+  size: 64, 60
+  orig: 64, 60
+  offset: 0, 0
+  index: -1

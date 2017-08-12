@@ -1,0 +1,26 @@
+{
+com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {
+	menu: { up: menu_up, down: menu_down },
+	restart: { up: restart_up, down: restart_down },
+	continue: { up: continue_up, down: continue_down },
+	sound: { down: sound_down, up: sound_up, checked: sound_checked },
+	music: { down: music_down, up: music_up, checked: music_checked },
+	yes: { down: yes_down, up: yes_up },
+	no: { down: no_down, up: no_up }
+},
+com.badlogic.gdx.scenes.scene2d.ui.Image: {
+	background: { drawable: background }
+},
+com.badlogic.gdx.graphics.g2d.BitmapFont: { 
+	default-font: { file: fonts/general_normal.fnt },
+	big-font: { file: fonts/general_big.fnt },
+	yellow-font: { file: fonts/yellow_normal.fnt },
+	red-font: { file: fonts/red_normal.fnt }         
+},
+com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+	default: { font: default-font },
+	big-font: { font: big-font },
+	yellow-font: { font: yellow-font },
+	red-font: { font: red-font }  
+},
+}

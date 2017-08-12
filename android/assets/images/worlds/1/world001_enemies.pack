@@ -1,0 +1,96 @@
+
+world001_enemies.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+worm
+  rotate: false
+  xy: 1, 106
+  size: 105, 133
+  orig: 105, 133
+  offset: 0, 0
+  index: 7
+arrows
+  rotate: false
+  xy: 108, 169
+  size: 152, 70
+  orig: 152, 70
+  offset: 0, 0
+  index: 1
+snake
+  rotate: false
+  xy: 1, 6
+  size: 97, 98
+  orig: 97, 98
+  offset: 0, 0
+  index: 1
+snake
+  rotate: false
+  xy: 262, 141
+  size: 97, 98
+  orig: 97, 98
+  offset: 0, 0
+  index: 2
+snake
+  rotate: false
+  xy: 361, 141
+  size: 97, 98
+  orig: 97, 98
+  offset: 0, 0
+  index: 3
+snake
+  rotate: false
+  xy: 460, 141
+  size: 97, 98
+  orig: 97, 98
+  offset: 0, 0
+  index: 4
+snake
+  rotate: false
+  xy: 559, 141
+  size: 97, 98
+  orig: 97, 98
+  offset: 0, 0
+  index: 5
+worm
+  rotate: false
+  xy: 658, 141
+  size: 97, 98
+  orig: 97, 98
+  offset: 0, 0
+  index: 6
+worm
+  rotate: false
+  xy: 757, 143
+  size: 89, 96
+  orig: 89, 96
+  offset: 0, 0
+  index: 5
+worm
+  rotate: false
+  xy: 848, 149
+  size: 92, 90
+  orig: 92, 90
+  offset: 0, 0
+  index: 4
+worm
+  rotate: false
+  xy: 108, 83
+  size: 93, 84
+  orig: 93, 84
+  offset: 0, 0
+  index: 3
+worm
+  rotate: false
+  xy: 100, 1
+  size: 92, 80
+  orig: 92, 80
+  offset: 0, 0
+  index: 2
+worm
+  rotate: false
+  xy: 848, 57
+  size: 89, 90
+  orig: 89, 90
+  offset: 0, 0
+  index: 1

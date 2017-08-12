@@ -1,0 +1,89 @@
+
+world001_background.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+world_001_blueMontains
+  rotate: false
+  xy: 1, 861
+  size: 1020, 161
+  orig: 1020, 161
+  offset: 0, 0
+  index: -1
+world_001_background21
+  rotate: false
+  xy: 1, 724
+  size: 1020, 135
+  orig: 1020, 135
+  offset: 0, 0
+  index: -1
+world_001_ground
+  rotate: false
+  xy: 1, 598
+  size: 1020, 124
+  orig: 1020, 124
+  offset: 0, 0
+  index: -1
+world_001_background22
+  rotate: false
+  xy: 1, 317
+  size: 561, 279
+  orig: 561, 279
+  offset: 0, 0
+  index: -1
+world_001_sun
+  rotate: false
+  xy: 1, 49
+  size: 552, 266
+  orig: 552, 266
+  offset: 0, 0
+  index: -1
+world_001_background22v2
+  rotate: false
+  xy: 564, 324
+  size: 216, 272
+  orig: 216, 272
+  offset: 0, 0
+  index: -1
+cloud2
+  rotate: false
+  xy: 782, 488
+  size: 206, 108
+  orig: 206, 108
+  offset: 0, 0
+  index: -1
+cloud1
+  rotate: false
+  xy: 564, 219
+  size: 271, 103
+  orig: 271, 103
+  offset: 0, 0
+  index: -1
+platform_brown
+  rotate: false
+  xy: 782, 406
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+world_001_background22v4
+  rotate: false
+  xy: 1, 1
+  size: 110, 46
+  orig: 110, 46
+  offset: 0, 0
+  index: -1
+cloud3
+  rotate: false
+  xy: 864, 447
+  size: 93, 39
+  orig: 93, 39
+  offset: 0, 0
+  index: -1
+world_001_background22v1
+  rotate: false
+  xy: 782, 330
+  size: 58, 74
+  orig: 58, 74
+  offset: 0, 0
+  index: -1
