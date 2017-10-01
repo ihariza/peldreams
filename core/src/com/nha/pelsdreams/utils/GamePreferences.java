@@ -28,8 +28,8 @@ public class GamePreferences {
 	 * Carga las preferencias
 	 */
 	public void load() {
-		sound = prefs.getBoolean("sound", true);
-		music = prefs.getBoolean("music", true);
+		sound = prefs.getBoolean("sound", false);
+		music = prefs.getBoolean("music", false);
 
 	}
 
