@@ -27,16 +27,16 @@ public class Runner extends AbstractGameObject {
 	private final float JUMP_TIME_MIN = 0.15f;
 	private final float JUMP_TIME_OFFSET_FLYING = JUMP_TIME_MAX - 0.015f;
 
-	private Animation animRunning;
-	private Animation animJump;
-	private Animation animJumpRising;
-	private Animation animJumpFalling;
-	private Animation animDeadRock;
-	private Animation animDeadEnemy;
-	private Animation animDeadEnemyEnd;
-	private Animation animDodgingReversed;
-	private Animation animDodging;
-	private Animation animDodged;
+	private Animation<TextureRegion> animRunning;
+	private Animation<TextureRegion> animJump;
+	private Animation<TextureRegion> animJumpRising;
+	private Animation<TextureRegion> animJumpFalling;
+	private Animation<TextureRegion> animDeadRock;
+	private Animation<TextureRegion> animDeadEnemy;
+	private Animation<TextureRegion> animDeadEnemyEnd;
+	private Animation<TextureRegion> animDodgingReversed;
+	private Animation<TextureRegion> animDodging;
+	private Animation<TextureRegion> animDodged;
 	private Vector2 velocity;
 	private Vector2 originDodge;
 	public StateType state;
@@ -69,9 +69,9 @@ public class Runner extends AbstractGameObject {
 		animDodgingReversed = AssetsWorlds.instance.runner.anim_dodgingReversed;
 		animDodged = AssetsWorlds.instance.runner.anim_dodged;
 		setAnimation(animRunning);
-		dimension.set(animRunning.getKeyFrames()[0] .getRegionWidth()
+		dimension.set(animRunning.getKeyFrame(0).getRegionWidth()
 				* Constants.WORLD_TO_BOX,
-				animRunning.getKeyFrames()[0].getRegionHeight()
+				animRunning.getKeyFrame(0).getRegionHeight()
 						* Constants.WORLD_TO_BOX);
 		// Establece el origen en el centro del personaje
 		origin.set(dimension.x / 2, dimension.y / 2);

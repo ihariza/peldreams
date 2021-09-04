@@ -64,7 +64,7 @@ public class InitScreenActor extends ScreenActor {
 		Stack mainItemStack = new Stack();
 		Table imageMainItemTable = new Table().center().left().padLeft(5);
 		Image imageMainItem = new Image(
-				AssetsWorlds.instance.mainItem.animation.getKeyFrames()[0]);
+				AssetsWorlds.instance.mainItem.animation.getKeyFrame(0));
 		imageMainItem.setScale(0.8f);
 		imageMainItemTable.add(imageMainItem);
 
@@ -81,7 +81,7 @@ public class InitScreenActor extends ScreenActor {
 		Stack itemStack = new Stack();
 		Table imageItemTable = new Table().center().left().padTop(120);
 		Image imageItem = new Image(
-				AssetsWorlds.instance.item.animation.getKeyFrames()[0]);
+				AssetsWorlds.instance.item.animation.getKeyFrame(0));
 		imageItem.setScale(0.8f);
 		imageItemTable.add(imageItem);
 

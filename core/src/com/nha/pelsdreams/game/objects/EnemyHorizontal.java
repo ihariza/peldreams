@@ -21,11 +21,11 @@ public class EnemyHorizontal extends AbstractGameObject {
 
 	public static final String TAG = EnemyHorizontal.class.getName();
 
-	private Animation arrows;
+	private Animation<TextureRegion> arrows;
 	// Enemigo seleccionado aleatoriamente
-	private Animation animationSelected;
+	private Animation<TextureRegion> animationSelected;
 	// Almacena los enemigos
-	private Array<Animation> enemies;
+	private Array<Animation<TextureRegion>> enemies;
 	// Velocidad del enemigo
 	private Vector2 velocity;
 	private boolean isLaunched;
@@ -39,14 +39,14 @@ public class EnemyHorizontal extends AbstractGameObject {
 		userDataType = UserDataType.ENEMY_HORIZONTAL;
 
 		arrows = AssetsWorlds.instance.enemiesWorld001.arrows;
-		enemies = new Array<Animation>();
+		enemies = new Array<>();
 		enemies.add(arrows);
 		// Establece una animaci�n aleatoriamente
 		animationSelected = enemies.get(MathUtils.random(0, enemies.size - 1));
 		setAnimation(animationSelected);
-		dimension.set(animationSelected.getKeyFrames()[0].getRegionWidth()
+		dimension.set(animationSelected.getKeyFrame(0).getRegionWidth()
 				* Constants.WORLD_TO_BOX,
-				animationSelected.getKeyFrames()[0].getRegionHeight()
+				animationSelected.getKeyFrame(0).getRegionHeight()
 						* Constants.WORLD_TO_BOX);
 		// Centra la imagen en el objeto
 		origin.set(0, 0);

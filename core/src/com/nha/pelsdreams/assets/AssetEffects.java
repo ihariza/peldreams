@@ -3,6 +3,7 @@ package com.nha.pelsdreams.assets;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.utils.Array;
 
 /**
@@ -13,7 +14,7 @@ import com.badlogic.gdx.utils.Array;
  */
 public class AssetEffects {
 
-	public final Animation smokeLaunch;
+	public final Animation<TextureRegion> smokeLaunch;
 
 	public AssetEffects(TextureAtlas atlas) {
 		// Animacion efecto humo lanzar
@@ -22,6 +23,6 @@ public class AssetEffects {
 			regLaunch.add(new AtlasRegion(atlas.findRegion("launch", i)));
 		}
 
-		smokeLaunch = new Animation(1.0f / 30.0f, regLaunch, Animation.PlayMode.NORMAL);
+		smokeLaunch = new Animation<>(1.0f / 30.0f, regLaunch, Animation.PlayMode.NORMAL);
 	}
 }

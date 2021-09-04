@@ -71,7 +71,7 @@ public class NotCompletedScreenActor extends ScreenActor {
 		Stack mainItemStack = new Stack();
 		Table imageMainItemTable = new Table().left().padLeft(60).padTop(40);
 		Image imageMainItem = new Image(
-				AssetsWorlds.instance.mainItem.animation.getKeyFrames()[0]);
+				AssetsWorlds.instance.mainItem.animation.getKeyFrame(0));
 		imageMainItem.setScale(0.8f);
 		imageMainItemTable.add(imageMainItem);
 
@@ -87,7 +87,7 @@ public class NotCompletedScreenActor extends ScreenActor {
 		Stack itemStack = new Stack();
 		Table imageItemTable = new Table().left().padLeft(55).padTop(160);
 		Image imageItem = new Image(
-				AssetsWorlds.instance.item.animation.getKeyFrames()[0]);
+				AssetsWorlds.instance.item.animation.getKeyFrame(0));
 		imageItem.setScale(0.8f);
 		imageItemTable.add(imageItem);
 

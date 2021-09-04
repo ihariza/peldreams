@@ -2,6 +2,7 @@ package com.nha.pelsdreams.game.objects;
 
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.Body;
@@ -38,8 +39,8 @@ public abstract class AbstractGameObject {
 	public Rectangle bounds;
 	public float stateTime;
 	public float stateTimeEffect;
-	public Animation animation;
-	public Animation animationEffect;
+	public Animation<TextureRegion> animation;
+	public Animation<TextureRegion> animationEffect;
 	// Posición donde se produce el efecto
 	public Vector2 effectPosition;
 
@@ -80,7 +81,7 @@ public abstract class AbstractGameObject {
 	 * 
 	 * @param animation
 	 */
-	public void setAnimation(Animation animation) {
+	public void setAnimation(Animation<TextureRegion> animation) {
 		this.animation = animation;
 		stateTime = 0;
 	}
@@ -88,9 +89,9 @@ public abstract class AbstractGameObject {
 	/**
 	 * Establece la animación effecto del objeto
 	 * 
-	 * @param animation
+	 * @param animationEffect
 	 */
-	public void setAnimationEffect(Animation animationEffect) {
+	public void setAnimationEffect(Animation<TextureRegion> animationEffect) {
 		this.animationEffect = animationEffect;
 		effectPosition = new Vector2(position.x, position.y);
 		stateTimeEffect = 0;

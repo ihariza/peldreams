@@ -18,7 +18,7 @@ import com.nha.pelsdreams.utils.Constants;
  */
 public class Item extends AbstractGameObject {
 
-	private Animation animItem;
+	private Animation<TextureRegion> animItem;
 	public ParticleEffect particleEffect = new ParticleEffect();
 	// Estado actual de visibilidad
 	public boolean collected;
@@ -32,9 +32,9 @@ public class Item extends AbstractGameObject {
 		animItem = AssetsWorlds.instance.item.animation;
 		setAnimation(animItem);
 		// Redimensionado a un 90%
-		dimension.set(animItem.getKeyFrames()[0].getRegionWidth()
+		dimension.set(animItem.getKeyFrame(0).getRegionWidth()
 				* Constants.WORLD_TO_BOX * 0.9f,
-				animItem.getKeyFrames()[0].getRegionHeight()
+				animItem.getKeyFrame(0).getRegionHeight()
 						* Constants.WORLD_TO_BOX * 0.9f);
 		// Establece los l�mites para la detecci�n de colisiones
 		bounds.set(0, 0, dimension.x, dimension.y);
@@ -61,7 +61,7 @@ public class Item extends AbstractGameObject {
 		
 		// Si no ha sido recogida, se dibuja
 		if (!collected) {
-			TextureRegion reg = null;
+			TextureRegion reg;
 
 			reg = animItem.getKeyFrame(stateTime, true);
 			batch.draw(reg.getTexture(), position.x, position.y, origin.x,

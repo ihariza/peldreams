@@ -27,11 +27,11 @@ public class EnemyJumper extends AbstractGameObject {
 	}
 
 	// Almacena las animaciones de la serpiente
-	private Array<Animation> worm;
+	private Array<Animation<TextureRegion>> worm;
 	// Enemigo seleccionado aleatoriamente
-	private Array<Animation> animationSelected;
+	private Array<Animation<TextureRegion>> animationSelected;
 	// Almacena los enemigos
-	private Array<Array<Animation>> enemies;
+	private Array<Array<Animation<TextureRegion>>> enemies;
 	// Tiempo trancurrido para cambiar de animación
 	private static float DELAY_TIME = 0.2f;
 	private float delay;
@@ -50,18 +50,18 @@ public class EnemyJumper extends AbstractGameObject {
 		userDataType = UserDataType.ENEMY_JUMPER;
 		// Centra la imagen en el objeto
 		origin.set(0, 0);
-		worm = new Array<Animation>();
+		worm = new Array<>();
 		worm.add(AssetsWorlds.instance.enemiesWorld001.worm);
 		worm.add(AssetsWorlds.instance.enemiesWorld001.worm);
-		enemies = new Array<Array<Animation>>();
+		enemies = new Array<>();
 		enemies.add(worm);
 		// Establece una animación aleatoriamente
 		animationSelected = enemies.get(MathUtils.random(0, enemies.size - 1));
 		setAnimation(animationSelected.first());
 		dimension.set(
-				animationSelected.first().getKeyFrames()[0].getRegionWidth()
+				animationSelected.first().getKeyFrame(0).getRegionWidth()
 						* Constants.WORLD_TO_BOX, animationSelected.first()
-						.getKeyFrames()[0].getRegionHeight()
+						.getKeyFrame(0).getRegionHeight()
 						* Constants.WORLD_TO_BOX);
 		// Establece los límites para la detección de colisiones
 		bounds.set(0, 0, dimension.x, dimension.y);

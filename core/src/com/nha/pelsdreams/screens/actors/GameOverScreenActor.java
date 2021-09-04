@@ -1,11 +1,15 @@
 package com.nha.pelsdreams.screens.actors;
 
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
 import com.nha.pelsdreams.enums.ShowButtonsType;
 import com.nha.pelsdreams.screens.DirectedGame;
+import com.nha.pelsdreams.screens.GameScreen;
+import com.nha.pelsdreams.screens.LoadingScreen;
+import com.nha.pelsdreams.screens.WorldScreen;
 import com.nha.pelsdreams.utils.Bundle;
 import com.nha.pelsdreams.utils.Constants;
 import com.nha.pelsdreams.utils.SaveGameHelper.GameState;
@@ -76,7 +80,24 @@ public class GameOverScreenActor extends ScreenActor {
 
 	@Override
 	protected ClickListener continueClickListener() {
-		return null;
+		return new ClickListener() {
+			@Override
+			public void clicked(InputEvent event, float x, float y) {
+				show(false, false);
+				// Si ha pasado el último nivel del mundo, vuelve al menú de
+				// mundos
+				if (gameState.currentWorld.currentLevel.id == gameState.currentWorld.levels.size - 1) {
+					game.setScreen(new LoadingScreen(new WorldScreen(game,
+							gameState)));
+				} else {
+					// Establece el siguiente nivel como nivel actual
+					gameScreen.getGameState().currentWorld.currentLevel = gameScreen
+							.getGameState().currentWorld.levels.get(gameScreen
+									.getGameState().currentWorld.currentLevel.id + 1);
+					game.setScreen(new GameScreen(game, gameState));
+				}
+			}
+		};
 	}
 
 }

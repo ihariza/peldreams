@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.ParticleEffect;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.utils.Array;
 
 /**
@@ -14,16 +15,16 @@ import com.badlogic.gdx.utils.Array;
  */
 public class AssetRunner {
 
-	public final Animation anim_run;
-	public final Animation anim_jump;
-	public final Animation anim_jump_rising;
-	public final Animation anim_jump_falling;
-	public final Animation anim_dodging;
-	public final Animation anim_dodgingReversed;
-	public final Animation anim_dodged;
-	public final Animation anim_dead_rock;
-	public final Animation anim_dead_enemy;
-	public final Animation anim_dead_enemy_end;
+	public final Animation<TextureRegion> anim_run;
+	public final Animation<TextureRegion> anim_jump;
+	public final Animation<TextureRegion> anim_jump_rising;
+	public final Animation<TextureRegion> anim_jump_falling;
+	public final Animation<TextureRegion> anim_dodging;
+	public final Animation<TextureRegion> anim_dodgingReversed;
+	public final Animation<TextureRegion> anim_dodged;
+	public final Animation<TextureRegion> anim_dead_rock;
+	public final Animation<TextureRegion> anim_dead_enemy;
+	public final Animation<TextureRegion> anim_dead_enemy_end;
 	public final ParticleEffect dustParticles;
 	public final ParticleEffect fallParticles;
 
@@ -42,7 +43,7 @@ public class AssetRunner {
 		regRun.add(regRun_4);
 		regRun.add(regRun_5);
 
-		anim_run = new Animation(1.0f / 20.0f, regRun,
+		anim_run = new Animation<>(1.0f / 20.0f, regRun,
 				Animation.PlayMode.LOOP_PINGPONG);
 
 		// Animación inicio de salto
@@ -53,7 +54,7 @@ public class AssetRunner {
 		regJump.add(regJump_2);
 		regJump.add(regJump_1);
 
-		anim_jump = new Animation(1.0f / 30.0f, regJump,
+		anim_jump = new Animation<>(1.0f / 30.0f, regJump,
 				Animation.PlayMode.NORMAL);
 
 		// Animación salto subiendo
@@ -61,7 +62,7 @@ public class AssetRunner {
 		AtlasRegion regJumpRising_1 = atlas.findRegion("pel", 8);
 		regJumpRising.add(regJumpRising_1);
 
-		anim_jump_rising = new Animation(1.0f / 20.0f, regJumpRising,
+		anim_jump_rising = new Animation<>(1.0f / 20.0f, regJumpRising,
 				Animation.PlayMode.NORMAL);
 
 		// Animación salto cayendo
@@ -69,7 +70,7 @@ public class AssetRunner {
 		AtlasRegion regJumpFalling_1 = atlas.findRegion("pel", 9);
 		regJumpFalling.add(regJumpFalling_1);
 
-		anim_jump_falling = new Animation(1.0f / 20.0f, regJumpFalling,
+		anim_jump_falling = new Animation<>(1.0f / 20.0f, regJumpFalling,
 				Animation.PlayMode.LOOP_PINGPONG);
 
 		// Animación de corriendo a esquivar
@@ -79,12 +80,12 @@ public class AssetRunner {
 		regDodging.add(regDodging_1);
 		regDodging.add(regDodging_2);
 
-		anim_dodging = new Animation(1.0f / 30.0f, regDodging,
+		anim_dodging = new Animation<>(1.0f / 30.0f, regDodging,
 				Animation.PlayMode.NORMAL);
 
 		// Animación de esquivar a corriendo.
 		regDodging.reverse();
-		anim_dodgingReversed = new Animation(1.0f / 30.0f, regDodging,
+		anim_dodgingReversed = new Animation<>(1.0f / 30.0f, regDodging,
 				Animation.PlayMode.NORMAL);
 
 		// Animación esquivar
@@ -96,7 +97,7 @@ public class AssetRunner {
 		regDodged.add(regDodged_2);
 		regDodged.add(regDodged_3);
 
-		anim_dodged = new Animation(1.0f / 20.0f, regDodged,
+		anim_dodged = new Animation<>(1.0f / 20.0f, regDodged,
 				Animation.PlayMode.LOOP_PINGPONG);
 
 		// Animación muerte por roca
@@ -104,7 +105,7 @@ public class AssetRunner {
 		AtlasRegion regDeadRock_1 = atlas.findRegion("pel", 10);
 		regDeadRock.add(regDeadRock_1);
 
-		anim_dead_rock = new Animation(1.0f / 20.0f, regDeadRock,
+		anim_dead_rock = new Animation<>(1.0f / 20.0f, regDeadRock,
 				Animation.PlayMode.NORMAL);
 
 		// Animación muerte por enemigo
@@ -119,7 +120,7 @@ public class AssetRunner {
 		regDeadEnemy.add(regDeadEnemy_3);
 		regDeadEnemy.add(regDeadEnemy_4);
 
-		anim_dead_enemy = new Animation(1.0f / 15.0f, regDeadEnemy,
+		anim_dead_enemy = new Animation<>(1.0f / 15.0f, regDeadEnemy,
 				Animation.PlayMode.NORMAL);
 
 		// Animación final muerte por enemigo
@@ -136,7 +137,7 @@ public class AssetRunner {
 		regDeadEnemyEnd.add(regDeadEnemyEnd_4);
 		regDeadEnemyEnd.add(regDeadEnemyEnd_5);
 		regDeadEnemyEnd.add(regDeadEnemyEnd_6);
-		anim_dead_enemy_end = new Animation(1.0f / 15.0f, regDeadEnemyEnd,
+		anim_dead_enemy_end = new Animation<>(1.0f / 15.0f, regDeadEnemyEnd,
 				Animation.PlayMode.NORMAL);
 
 		// Efectos de Partículas

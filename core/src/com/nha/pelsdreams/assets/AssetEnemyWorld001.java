@@ -3,6 +3,7 @@ package com.nha.pelsdreams.assets;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.utils.Array;
 
 /**
@@ -13,9 +14,9 @@ import com.badlogic.gdx.utils.Array;
  */
 public class AssetEnemyWorld001 {
 
-	public final Animation snake_first, snake_second;
-	public final Animation arrows;
-	public final Animation worm;
+	public final Animation<TextureRegion> snake_first, snake_second;
+	public final Animation<TextureRegion> arrows;
+	public final Animation<TextureRegion> worm;
 
 	public AssetEnemyWorld001(TextureAtlas atlas) {
 
@@ -33,23 +34,23 @@ public class AssetEnemyWorld001 {
 		regSnake_second.add(regSnake_4);
 		regSnake_second.add(regSnake_5);
 
-		snake_first = new Animation(1.0f / 15.0f, regSnake_first,
+		snake_first = new Animation<>(1.0f / 15.0f, regSnake_first,
 				Animation.PlayMode.LOOP_PINGPONG);
-		snake_second = new Animation(1.0f / 15.0f, regSnake_second,
+		snake_second = new Animation<>(1.0f / 15.0f, regSnake_second,
 				Animation.PlayMode.LOOP_PINGPONG);
 
 		// Animacion de la flecha
 		Array<AtlasRegion> regArrows = null;
 		regArrows = atlas.findRegions("arrows");
 
-		arrows = new Animation(1.0f / 15.0f, regArrows,
+		arrows = new Animation<>(1.0f / 15.0f, regArrows,
 				Animation.PlayMode.LOOP_PINGPONG);
 
 		// Animacion del worm
 		Array<AtlasRegion> regWorm = null;
 		regWorm = atlas.findRegions("worm");
 
-		worm = new Animation(1.0f / 15.0f, regWorm,
+		worm = new Animation<>(1.0f / 15.0f, regWorm,
 				Animation.PlayMode.LOOP_PINGPONG);
 	}
 }
